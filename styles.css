@@ -1,0 +1,68 @@
+/* Estilos base */
+body {
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  display: flex; /* Diseño flexible para centrar contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+  margin: 0; /* Sin márgenes externos */
+  background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Contenedor principal que envuelve el canvas y los controles */
+.container {
+  display: flex;
+  flex-direction: column; /* Orientación vertical */
+  align-items: center; /* Centrar contenido horizontalmente */
+  gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Estilos para el canvas */
+#myCanvas {
+  border: 2px solid #e0e0e0; /* Borde sólido y sutil */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+/* Contenedor de botones de control */
+.controls {
+  display: flex; /* Diseño flexible para organizar botones en fila */
+  gap: 10px; /* Espaciado entre botones */
+}
+
+/* Estilos generales para botones */
+button {
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  background-color: #007BFF; /* Color de fondo azul */
+  color: #FFFFFF; /* Texto blanco */
+  cursor: pointer; /* Cursor mano al pasar el mouse */
+  transition: background-color 0.3s, transform 0.2s; /* Efecto suave al pasar el mouse y al presionar */
+}
+
+/* Efecto al pasar el mouse sobre un botón */
+button:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro */
+  transform: translateY(-2px); /* Movimiento hacia arriba */
+}
+
+/* Efecto al presionar un botón */
+button:active {
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+
+/* Contenedor de contadores de velocidad */
+.speedCounters {
+  display: flex; /* Diseño flexible para organizar contadores en fila */
+  gap: 20px; /* Espaciado entre contadores */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos para los contadores de velocidad */
+.speedCounters span {
+  background-color: #fff; /* Fondo blanco */
+  padding: 8px 12px; /* Espaciado interno */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
